@@ -1,5 +1,6 @@
 from fastapi import FastAPI
-from crawler_radhaha.beready_crawler_core import router as lilacdiet_router, init_db
+from crawler_radhaha.beready_crawler_core import router as lilacdiet_router
+from crawler_radhaha.beready_crawler_core import init_db
 from crawler_radhaha.beready_crawler import crawler_once
 from main_yolo2 import router as yolo_router
 
