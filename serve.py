@@ -5,7 +5,7 @@ from crawler_radhaha.beready_crawler import crawl_once
 from main_yolo2 import router as yolo_router
 
 
-app = fastAPI(title="Beready API (YOLO + LilacDiet)")
+app = FastAPI(title="Beready API (YOLO + LilacDiet)")
 
 # 시작할때마다 초기화 및 db 생성 보장
 @app.on_event("startup")
