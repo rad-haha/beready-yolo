@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 import re
+import os
 import sqlite3
 from datetime import datetime, timedelta
 from typing import Dict, List, Optional
@@ -9,6 +10,8 @@ from pydantic import BaseModel
 
 DB_PATH = "cafeteria.db"
 # 이 파일은 serve.py와 같은 경로에 저장됨 #
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+DB_PATH = os.path.join(BASE_DIR, "cafeteria.db")
 
 SCHEMA_SQL = """
 CREATE TABLE IF NOT EXISTS lilac_menu(
